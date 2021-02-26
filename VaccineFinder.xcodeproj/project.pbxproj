@@ -13,6 +13,7 @@
 		CC1CEC4D25E775C50080607C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC1CEC4C25E775C50080607C /* Preview Assets.xcassets */; };
 		CC1CEC5825E775C50080607C /* VaccineFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CEC5725E775C50080607C /* VaccineFinderTests.swift */; };
 		CC1CEC6325E775C50080607C /* VaccineFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CEC6225E775C50080607C /* VaccineFinderUITests.swift */; };
+		CC1CEC7425E776A40080607C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CEC7325E776A40080607C /* AppState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		CC1CEC5E25E775C50080607C /* VaccineFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VaccineFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC1CEC6225E775C50080607C /* VaccineFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineFinderUITests.swift; sourceTree = "<group>"; };
 		CC1CEC6425E775C50080607C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC1CEC7325E776A40080607C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				CC1CEC4525E775C40080607C /* VaccineFinderApp.swift */,
 				CC1CEC4725E775C40080607C /* ContentView.swift */,
+				CC1CEC7325E776A40080607C /* AppState.swift */,
 				CC1CEC4925E775C50080607C /* Assets.xcassets */,
 				CC1CEC4E25E775C50080607C /* Info.plist */,
 				CC1CEC4B25E775C50080607C /* Preview Content */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC1CEC7425E776A40080607C /* AppState.swift in Sources */,
 				CC1CEC4825E775C40080607C /* ContentView.swift in Sources */,
 				CC1CEC4625E775C40080607C /* VaccineFinderApp.swift in Sources */,
 			);
