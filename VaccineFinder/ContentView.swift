@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum ListItem {
+enum ListItem: Hashable {
     case date(String)
     case title(String)
     case event(VEvent)
@@ -18,30 +18,54 @@ struct ContentView: View {
     @Environment(\.openURL) var openURL
     
     var body: some View {
-        Button("💉 Refresh 💉") {
-            state.load()
-        }.padding()
-        List(days(from: state.events), id: \.date) { day in
-            VStack {
-                Divider()
-                Text(day.date).font(.title)
-                Text(day.events.first?.title ?? "").font(.footnote).padding(5)
-                Group {
-                    ForEach(day.events, id: \.id) { event in
-                        Button(action: { openURL(URL(string: "https://healthevents.utahcounty.gov/event/\(event.id)")!) }) {
-                        HStack {
-                            Text(event.city)
-                            available(i: event.remaining)
-                            Spacer()
-                        }.padding(3)}
+        VStack {
+            Button("Refresh") {
+                state.load()
+            }.padding()
+            List {
+                ForEach(days(from: state.events), id: \.date) { day in
+                    Section(header: Text(day.date),
+                            footer: Text("ELIGIBILITY: " + (day.events.first?.title ?? "")).font(.footnote).foregroundColor(.secondary)) {
+                        ForEach(day.events, id: \.id) { event in
+                            if event.remaining > 0 {
+                                Button(action: { openURL(url(event: event.id)) }) {
+                                    cellContents(event: event)
+                                }
+                            } else {
+                                Group {
+                                    cellContents(event: event)
+                                }
+                            }
+                        }
                     }
                 }
             }
+            Text("For official information about COVID-19, visit the ").multilineTextAlignment(.center)
+            Link("Utah Coronavirus website", destination: URL(string: "https://coronavirus.utah.gov")!)
         }
         .onAppear {
             state.load()
         }
     }
+}
+
+func cellContents(event: VEvent) -> some View {
+    VStack {
+        HStack {
+            Text("Location:")
+            Spacer()
+            Text(event.city).bold()
+        }
+        HStack {
+            Text("Available Appointments:")
+            Spacer()
+            available(i: event.remaining).bold()
+        }
+    }//.padding(3)
+}
+
+func url(event: Int) -> URL {
+    URL(string: "https://healthevents.utahcounty.gov/event/\(event)")!
 }
 
 func available(i: Int) -> Text {

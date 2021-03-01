@@ -30,7 +30,7 @@ class AppState: ObservableObject {
     }
 }
 
-struct VEvent: Decodable {
+struct VEvent: Decodable, Hashable {
     var id: Int
     var city: String
     var remaining: Int
