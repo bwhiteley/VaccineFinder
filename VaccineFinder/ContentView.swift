@@ -24,8 +24,7 @@ struct ContentView: View {
             }.padding()
             List {
                 ForEach(days(from: state.events), id: \.date) { day in
-                    Section(header: Text(day.date),
-                            footer: Text("ELIGIBILITY: " + (day.events.first?.title ?? "")).font(.footnote).foregroundColor(.secondary)) {
+                    Section(header: Text(day.date)) {
                         ForEach(day.events, id: \.id) { event in
                             if event.remaining > 0 {
                                 Button(action: { openURL(url(event: event.id)) }) {
@@ -52,15 +51,11 @@ struct ContentView: View {
 func cellContents(event: VEvent) -> some View {
     VStack {
         HStack {
-            Text("Location:")
-            Spacer()
             Text(event.city).bold()
-        }
-        HStack {
-            Text("Available Appointments:")
             Spacer()
             available(i: event.remaining).bold()
         }
+        Text(event.title).font(.footnote).foregroundColor(.secondary)
     }//.padding(3)
 }
 
