@@ -47,6 +47,7 @@
 		CC1CEC6225E775C50080607C /* VaccineFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineFinderUITests.swift; sourceTree = "<group>"; };
 		CC1CEC6425E775C50080607C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC1CEC7325E776A40080607C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		CC41923C25FAF16300D3BE73 /* VaccineFinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VaccineFinder.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		CC1CEC4425E775C40080607C /* VaccineFinder */ = {
 			isa = PBXGroup;
 			children = (
+				CC41923C25FAF16300D3BE73 /* VaccineFinder.entitlements */,
 				CC1CEC4525E775C40080607C /* VaccineFinderApp.swift */,
 				CC1CEC4725E775C40080607C /* ContentView.swift */,
 				CC1CEC7325E776A40080607C /* AppState.swift */,
@@ -421,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VaccineFinder/VaccineFinder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"VaccineFinder/Preview Content\"";
@@ -444,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VaccineFinder/VaccineFinder.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"VaccineFinder/Preview Content\"";
