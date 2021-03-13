@@ -11,27 +11,8 @@
 		CC1CEC4825E775C40080607C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CEC4725E775C40080607C /* ContentView.swift */; };
 		CC1CEC4A25E775C50080607C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC1CEC4925E775C50080607C /* Assets.xcassets */; };
 		CC1CEC4D25E775C50080607C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC1CEC4C25E775C50080607C /* Preview Assets.xcassets */; };
-		CC1CEC5825E775C50080607C /* VaccineFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CEC5725E775C50080607C /* VaccineFinderTests.swift */; };
-		CC1CEC6325E775C50080607C /* VaccineFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CEC6225E775C50080607C /* VaccineFinderUITests.swift */; };
 		CC1CEC7425E776A40080607C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1CEC7325E776A40080607C /* AppState.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CC1CEC5425E775C50080607C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CC1CEC3A25E775C40080607C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CC1CEC4125E775C40080607C;
-			remoteInfo = VaccineFinder;
-		};
-		CC1CEC5F25E775C50080607C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CC1CEC3A25E775C40080607C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CC1CEC4125E775C40080607C;
-			remoteInfo = VaccineFinder;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CC1CEC4225E775C40080607C /* VaccineFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VaccineFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,32 +21,12 @@
 		CC1CEC4925E775C50080607C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC1CEC4C25E775C50080607C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC1CEC4E25E775C50080607C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC1CEC5325E775C50080607C /* VaccineFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VaccineFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC1CEC5725E775C50080607C /* VaccineFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineFinderTests.swift; sourceTree = "<group>"; };
-		CC1CEC5925E775C50080607C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC1CEC5E25E775C50080607C /* VaccineFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VaccineFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC1CEC6225E775C50080607C /* VaccineFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineFinderUITests.swift; sourceTree = "<group>"; };
-		CC1CEC6425E775C50080607C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC1CEC7325E776A40080607C /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		CC41923C25FAF16300D3BE73 /* VaccineFinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VaccineFinder.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CC1CEC3F25E775C40080607C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC1CEC5025E775C50080607C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC1CEC5B25E775C50080607C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,8 +40,6 @@
 			isa = PBXGroup;
 			children = (
 				CC1CEC4425E775C40080607C /* VaccineFinder */,
-				CC1CEC5625E775C50080607C /* VaccineFinderTests */,
-				CC1CEC6125E775C50080607C /* VaccineFinderUITests */,
 				CC1CEC4325E775C40080607C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,8 +48,6 @@
 			isa = PBXGroup;
 			children = (
 				CC1CEC4225E775C40080607C /* VaccineFinder.app */,
-				CC1CEC5325E775C50080607C /* VaccineFinderTests.xctest */,
-				CC1CEC5E25E775C50080607C /* VaccineFinderUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,24 +74,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		CC1CEC5625E775C50080607C /* VaccineFinderTests */ = {
-			isa = PBXGroup;
-			children = (
-				CC1CEC5725E775C50080607C /* VaccineFinderTests.swift */,
-				CC1CEC5925E775C50080607C /* Info.plist */,
-			);
-			path = VaccineFinderTests;
-			sourceTree = "<group>";
-		};
-		CC1CEC6125E775C50080607C /* VaccineFinderUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CC1CEC6225E775C50080607C /* VaccineFinderUITests.swift */,
-				CC1CEC6425E775C50080607C /* Info.plist */,
-			);
-			path = VaccineFinderUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,42 +94,6 @@
 			productReference = CC1CEC4225E775C40080607C /* VaccineFinder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CC1CEC5225E775C50080607C /* VaccineFinderTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CC1CEC6A25E775C50080607C /* Build configuration list for PBXNativeTarget "VaccineFinderTests" */;
-			buildPhases = (
-				CC1CEC4F25E775C50080607C /* Sources */,
-				CC1CEC5025E775C50080607C /* Frameworks */,
-				CC1CEC5125E775C50080607C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CC1CEC5525E775C50080607C /* PBXTargetDependency */,
-			);
-			name = VaccineFinderTests;
-			productName = VaccineFinderTests;
-			productReference = CC1CEC5325E775C50080607C /* VaccineFinderTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		CC1CEC5D25E775C50080607C /* VaccineFinderUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CC1CEC6D25E775C50080607C /* Build configuration list for PBXNativeTarget "VaccineFinderUITests" */;
-			buildPhases = (
-				CC1CEC5A25E775C50080607C /* Sources */,
-				CC1CEC5B25E775C50080607C /* Frameworks */,
-				CC1CEC5C25E775C50080607C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CC1CEC6025E775C50080607C /* PBXTargetDependency */,
-			);
-			name = VaccineFinderUITests;
-			productName = VaccineFinderUITests;
-			productReference = CC1CEC5E25E775C50080607C /* VaccineFinderUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,14 +105,6 @@
 				TargetAttributes = {
 					CC1CEC4125E775C40080607C = {
 						CreatedOnToolsVersion = 12.3;
-					};
-					CC1CEC5225E775C50080607C = {
-						CreatedOnToolsVersion = 12.3;
-						TestTargetID = CC1CEC4125E775C40080607C;
-					};
-					CC1CEC5D25E775C50080607C = {
-						CreatedOnToolsVersion = 12.3;
-						TestTargetID = CC1CEC4125E775C40080607C;
 					};
 				};
 			};
@@ -227,8 +122,6 @@
 			projectRoot = "";
 			targets = (
 				CC1CEC4125E775C40080607C /* VaccineFinder */,
-				CC1CEC5225E775C50080607C /* VaccineFinderTests */,
-				CC1CEC5D25E775C50080607C /* VaccineFinderUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,20 +133,6 @@
 			files = (
 				CC1CEC4D25E775C50080607C /* Preview Assets.xcassets in Resources */,
 				CC1CEC4A25E775C50080607C /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC1CEC5125E775C50080607C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC1CEC5C25E775C50080607C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,36 +149,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC1CEC4F25E775C50080607C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC1CEC5825E775C50080607C /* VaccineFinderTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC1CEC5A25E775C50080607C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CC1CEC6325E775C50080607C /* VaccineFinderUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CC1CEC5525E775C50080607C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CC1CEC4125E775C40080607C /* VaccineFinder */;
-			targetProxy = CC1CEC5425E775C50080607C /* PBXContainerItemProxy */;
-		};
-		CC1CEC6025E775C50080607C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CC1CEC4125E775C40080607C /* VaccineFinder */;
-			targetProxy = CC1CEC5F25E775C50080607C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CC1CEC6525E775C50080607C /* Debug */ = {
@@ -466,90 +316,6 @@
 			};
 			name = Release;
 		};
-		CC1CEC6B25E775C50080607C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8RQ3PBDEZ7;
-				INFOPLIST_FILE = VaccineFinderTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.swift-bit.VaccineFinderTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VaccineFinder.app/VaccineFinder";
-			};
-			name = Debug;
-		};
-		CC1CEC6C25E775C50080607C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8RQ3PBDEZ7;
-				INFOPLIST_FILE = VaccineFinderTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.swift-bit.VaccineFinderTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VaccineFinder.app/VaccineFinder";
-			};
-			name = Release;
-		};
-		CC1CEC6E25E775C50080607C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8RQ3PBDEZ7;
-				INFOPLIST_FILE = VaccineFinderUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.swift-bit.VaccineFinderUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = VaccineFinder;
-			};
-			name = Debug;
-		};
-		CC1CEC6F25E775C50080607C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8RQ3PBDEZ7;
-				INFOPLIST_FILE = VaccineFinderUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.swift-bit.VaccineFinderUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = VaccineFinder;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -567,24 +333,6 @@
 			buildConfigurations = (
 				CC1CEC6825E775C50080607C /* Debug */,
 				CC1CEC6925E775C50080607C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CC1CEC6A25E775C50080607C /* Build configuration list for PBXNativeTarget "VaccineFinderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC1CEC6B25E775C50080607C /* Debug */,
-				CC1CEC6C25E775C50080607C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CC1CEC6D25E775C50080607C /* Build configuration list for PBXNativeTarget "VaccineFinderUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CC1CEC6E25E775C50080607C /* Debug */,
-				CC1CEC6F25E775C50080607C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
